@@ -1,0 +1,21 @@
+import NextDocument, { Html, Head, Main, NextScript } from "next/document";
+import React from "react";
+
+type Props = {};
+
+class Document extends NextDocument<Props> {
+  render() {
+    return (
+      <Html>
+        <Head></Head>
+        <body>
+          <Main />
+          <div id="portal" />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
+}
+
+export default Document;
